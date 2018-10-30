@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ruanjianbei.sport.mysport.activity.MainActivity">
+    <!-- 内容部分， fragment切换 -->
+
+    <FrameLayout
+        android:layout_above="@id/ll_bottom_tab"
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </FrameLayout>
+
+    <!--底部导航栏-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:baselineAligned="true"
+        android:background="@color/chunbai"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_shequ"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_shequ"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/shequ" />
+
+            <TextView
+                android:id="@+id/tv_shequ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_shequ"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/tab1"
+                android:textColor="@color/text1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_zhandui"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_zhandui"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/zhandui"
+                />
+
+            <TextView
+                android:id="@+id/tv_zhandui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_zhandui"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/tab2"
+                android:textColor="@color/text1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_sport"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="top"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/iv_sport"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/paobu"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_guijijilu"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_xiaoxi"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/guijijilu" />
+
+
+            <TextView
+                android:id="@+id/tv_guiji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_xiaoxi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/tab3"
+                android:textColor="@color/text1"
+
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/person"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:onClick="onClick">
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/iv_my"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/wode" />
+
+
+            <TextView
+                android:id="@+id/tv_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_my"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/tab4"
+                android:textColor="@color/text1"
+
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

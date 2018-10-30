@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:background="@color/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <ImageView
+            android:id="@+id/shangping_fanhui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            android:textColor="@color/chunbai"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/shangping_tupian"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/a1"/>
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/shangping_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#101010"
+        android:text="商品0号"
+        />
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/album_dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="50dp"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/jifen"/>
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/shangping_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="4999+19.9元"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/shangping_duihuan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/biaoti"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="确 认 兑 换"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

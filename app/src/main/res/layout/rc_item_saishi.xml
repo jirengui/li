@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yemianbeijin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/item_saishi_shijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2018年5月16日"
+        android:textColor="#101010" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/chunbai"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/item_saishi_tupian"
+                android:layout_width="285dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/xian_top"
+                android:layout_toEndOf="@+id/xian_left"
+                android:scaleType="fitXY"
+                android:src="@drawable/saishiaaa" />
+
+            <View
+                android:layout_width="285dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/item_saishi_tupian"
+                android:background="@color/xian" />
+
+            <View
+                android:id="@+id/xian_top"
+                android:layout_width="285dp"
+                android:layout_height="2dp"
+                android:background="@color/xian" />
+
+            <View
+                android:id="@+id/xian_left"
+                android:layout_width="2dp"
+                android:layout_height="142dp"
+                android:background="@color/xian" />
+
+            <View
+                android:id="@+id/xian_right"
+                android:layout_width="2dp"
+                android:layout_height="142dp"
+                android:layout_toEndOf="@id/item_saishi_tupian"
+                android:background="@color/xian" />
+
+            <TextView
+                android:id="@+id/item_saishi_neirong"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_saishi_tupian"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="2018宁夏·银川国际马拉松赛将于5月20日鸣枪开跑"
+                android:textColor="#101010" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/item_saishi_yiguoqi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/yiguoqi"/>
+    </RelativeLayout>
+</LinearLayout>

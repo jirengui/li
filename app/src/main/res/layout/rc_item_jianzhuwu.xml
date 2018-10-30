@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="@color/chunbai"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian"
+        />
+    <TextView
+        android:id="@+id/item_jianzhuwu_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/album_dp_10"
+        android:text="@string/qingdianjijianzhuwu"
+        android:textSize="16dp"
+        android:gravity="center_vertical"/>
+
+
+</LinearLayout>

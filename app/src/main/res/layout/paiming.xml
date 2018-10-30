@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:background="@color/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/paiming_fanhui"
+            android:layout_margin="@dimen/album_dp_10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/fanhui"/>
+
+        <TextView
+            android:layout_alignTop="@+id/paiming_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="排行榜"
+            android:textColor="@color/chunbai"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_alignTop="@+id/paiming_fanhui"
+            android:id="@+id/paiming_mingmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="命名"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/chunbai"
+            android:layout_marginRight="@dimen/album_dp_10"
+            />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/paiming_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        app:tabSelectedTextColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/paiming_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:textColor="#737373"
+        android:textSize="14dp"
+        android:text="可选择建筑物命名。"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/chunbai">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/paiming_touxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/paiming_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/paiming_touxiang"
+            android:textColor="#101010"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/paiming_gongli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textColor="#101010"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/xian"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/paiming_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

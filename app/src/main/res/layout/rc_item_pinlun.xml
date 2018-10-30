@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="14dp"
+
+            android:id="@+id/item_pinlun_touxiang" />
+
+        <TextView
+            android:id="@+id/item_pinlun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_pinlun_touxiang"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/item_pinlun_touxiang"
+            android:gravity="center"
+            android:text="南信院官方"
+            android:textColor="#101010"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/item_pinlun_fabiaoshijian"
+            android:layout_below="@+id/item_pinlun_name"
+            android:layout_alignLeft="@+id/item_pinlun_name"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#737373"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:text="2018-5-10"
+            />
+        <ImageView
+            android:id="@+id/item_pinlun_huifu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/item_pinlun_dianzan"
+            android:layout_alignTop="@+id/item_pinlun_name"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pinglun"/>
+        <ImageView
+            android:id="@+id/item_pinlun_dianzan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_pinlun_name"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/dianzan"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_pinlun_neirong"/>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian"/>
+</LinearLayout>

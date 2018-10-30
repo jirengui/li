@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:background="@color/biaoti"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/wodedingdan_fanhui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/wodedingdan"
+            android:textColor="@color/chunbai"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pu_dingdan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wodedingdan_rc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--android:background="@color/chunbai">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/dingdan_tu"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/wuxianlanyaerji" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/dingdan_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignTop="@+id/dingdan_tu"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_toRightOf="@+id/dingdan_tu"-->
+            <!--android:text="@string/wuxianlanyaerji"-->
+            <!--android:textColor="#101010"-->
+            <!--android:textSize="14dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/dingdan_leibie"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/dingdan_name"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_toRightOf="@+id/dingdan_tu"-->
+            <!--android:text="@string/leibie"-->
+            <!--android:textColor="#101010"-->
+            <!--android:textSize="14dp" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/dingdan_leibie"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="@string/gongji"-->
+            <!--android:textColor="#101010"-->
+            <!--android:textSize="14dp" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

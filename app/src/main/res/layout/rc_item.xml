@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/item_zhibo_tupian"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/saishiaaa"
+       />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/item_zhibo_tupian"
+        android:id="@+id/item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duihuan"
+        android:textColor="#101010"/>
+    <TextView
+        android:id="@+id/item_zhibo_leixin"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/item_tv"
+        android:layout_width="35dp"
+        android:layout_height="17dp"
+        android:text="@string/richangrenwu"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/huibai"
+        android:background="@drawable/bg_tv"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/item_zhibo_tupian"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/item_zhibo_renshu"
+        android:src="@drawable/xiaoren" />
+
+    <TextView
+        android:id="@+id/item_zhibo_renshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_zhibo_tupian"
+        android:layout_alignEnd="@+id/item_zhibo_tupian"
+        android:text="999999"
+        android:textColor="@color/chunbai"
+        android:textSize="12dp" />
+</RelativeLayout>

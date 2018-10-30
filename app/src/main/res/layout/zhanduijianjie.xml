@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFFD">
+
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/zhanduijianjie_touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@color/black" />
+            <ImageView
+                android:id="@+id/zhanduijianjie_fanhui"
+                android:layout_margin="@dimen/album_dp_10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/zuojiantou_bai"/>
+            <TextView
+                android:id="@+id/zhanduijianmian_duiming"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/zhanduijianjie_fanhui"
+                android:layout_centerHorizontal="true"
+                android:text="@string/chuangjian"
+                android:textColor="@color/chunbai"
+                android:textSize="18dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="@string/zuzhanrenyuan"
+                android:textSize="16dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/zhanduijianjie_genduochengyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/youjiantou_heise"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/zhanduijianjie_chengyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/xian"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jinqitiaozhan"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/zhanduijianjie_jinqitiaozhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</ScrollView>

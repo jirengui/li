@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="65dp"
+        android:background="@color/biaoti"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/chuangjianzhandui_fanhui"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fanhui"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="创建战队"
+                android:textColor="@color/text"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/chuangjian_touxiang"
+        android:src="@drawable/yuanxingjiahao"/>
+    <EditText
+        android:id="@+id/chuangjian_zhanduiming"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:backgroundTint="@color/chunbai"
+        android:layout_height="wrap_content"
+        android:hint="@string/zhanduiming"
+        android:textColorHint="@color/black"
+        />
+
+
+    <Button
+        android:clickable="false"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/chuangjian_chuangjianzhandui"
+        android:layout_marginBottom="27dp"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:text="@string/chuangjian"
+        android:background="@drawable/zhanduiyuanjiao"/>
+</LinearLayout>

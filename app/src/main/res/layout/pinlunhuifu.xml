@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:fitsSystemWindows="true"
+    android:background="@color/transparent"
+    >
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pinlunhuifu_touxiang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/pinlunhuifu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/pinlunhuifu_touxiang"
+                    android:layout_marginStart="19dp"
+                    android:layout_toEndOf="@+id/pinlunhuifu_touxiang"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#101010"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/pinlunhuifu_fabiaoshijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/pinlunhuifu_name"
+                    android:layout_below="@+id/pinlunhuifu_name"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="2018-5-10"
+                    android:textColor="#737373"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pinlunhuifu_neirong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a1"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="2"
+                android:maxLines="2"
+                android:paddingLeft="13dp"
+                android:paddingRight="5dp"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="#101010"
+                android:textSize="16dp" />
+
+
+            <LinearLayout
+                android:id="@+id/pinlunhuifu_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pinlunhuifu_neirong"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="4" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/pinlunhuifu_pinglun"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pinglun" />
+
+                    <TextView
+                        android:id="@+id/pinlunhuifu_pinglunshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/pinlunhuifu_pinglun"
+                        android:gravity="center"
+                        android:text="67"
+                        android:textColor="#101010" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/pinlunhuifu_dianzan"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dianzan" />
+
+                    <TextView
+                        android:id="@+id/pinlunhuifu_dianzanshu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@+id/pinlunhuifu_dianzan"
+                        android:gravity="center"
+                        android:text="67"
+                        android:textColor="#101010" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/pinlunhuifu_ll"
+                android:background="@color/xian" />
+
+
+            <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+                android:id="@+id/pinlunhuifu_shuaxin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/a2">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/pinlunhuifu_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+            </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+            <View
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/pinlunhuifu_shuaxin"
+                android:layout_marginBottom="2dp"
+                android:background="#e24343" />
+
+            <RelativeLayout
+
+                android:id="@+id/pinlunhuifu_comment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <TextView
+
+                    android:id="@+id/pinlunhuifu_pinglunneirong"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="start"
+                    android:hint="说点什么好呢"
+                    android:paddingLeft="5dp"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pinlunhuifu_comment2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/pinlunhuifu_zhenneirong" />
+
+                <EditText
+                    android:id="@+id/pinlunhuifu_zhenneirong"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toStartOf="@+id/pinlunhuifu_fasong"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="start"
+                    android:hint="说点什么好呢"
+                    android:paddingLeft="5dp"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/pinlunhuifu_fasong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:text="@string/fasong"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>
+

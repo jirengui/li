@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/biankuang"
+    android:orientation="vertical"
+    >
+        <TextView
+            android:padding="5dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:background="@color/biaoti"
+            android:textColor="@color/chunbai"
+            android:text="@string/xuexiaogonggao"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c1c1"/>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_gonggao"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>

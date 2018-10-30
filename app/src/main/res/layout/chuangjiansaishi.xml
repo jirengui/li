@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/biaoti"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/chuangjiansaishi_fanhui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/chuangjian"
+            android:textColor="@color/chunbai"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/chuangjiansaishi_tu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fangxingjiahao" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/xian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="比赛开始时间："
+            android:textColor="#101010"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_start_yue"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_start_ri"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_start_shi"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_start_miao"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="比赛结束时间："
+            android:textColor="#101010"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_end_yue"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_end_ri"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_end_shi"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_end_miao"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/biankuanghei"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="举办地点："
+            android:textColor="#101010"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_didian"
+            android:layout_marginRight="@dimen/album_dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如：教学楼"
+            android:paddingLeft="10dp"
+            android:background="@drawable/biankuanghei"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赛事说明："
+            android:textColor="#101010"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_shuoming"
+            android:layout_marginRight="@dimen/album_dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如：阳光冬日，快乐前行"
+            android:paddingLeft="10dp"
+            android:background="@drawable/biankuanghei"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赛事奖励："
+            android:textColor="#101010"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/chuangjiansaishi_jiangli"
+            android:layout_marginRight="@dimen/album_dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如：200积分"
+            android:paddingLeft="10dp"
+            android:background="@drawable/biankuanghei"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/chuangjiansaishi_chuangjian"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang_lv"
+        android:textSize="18dp"
+        android:text="@string/chuangjian"
+        />
+</LinearLayout>

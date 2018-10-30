@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '26.0.2'
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res-night']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        applicationId "ruanjianbei.sport.mysport"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'libs' /**在libs文件夹下找aar文件*/
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //MPA图表
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+
+    //地图
+    implementation files('libs/AMap3DMap_6.2.0_AMapNavi_6.1.0_20180427.jar')
+    implementation files('libs/AMap_Search_V5.7.0_20171229.jar')
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+    implementation files('libs/AMap_Location_V4.0.1_20180426.jar')
+
+    //Okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    //滚轮
+    implementation 'com.pl:wheelview:0.7.2'
+
+    //基于ijk的视频播放器
+    implementation files('libs/pldroid-player-2.1.3.jar')
+
+    //  推流工具
+    implementation 'com.github.WangShuo1143368701:WSLiveDemo:v1.7'
+
+    //消息推送
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //小红点
+    compile project(':stickyDotsLib')
+
+    //圆形图标
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //换肤
+    implementation 'skin.support:skin-support:3.1.0-beta'
+
+    // skin-support 基础控件支持
+    implementation 'skin.support:skin-support-design:3.1.0-beta'
+
+    // skin-support-design material design 控件支持
+    implementation 'skin.support:skin-support-cardview:3.1.0-beta'
+
+    // skin-support-cardview CardView 控件支持
+    implementation 'skin.support:skin-support-constraint-layout:3.1.0-beta'
+
+    // skin-support-constraint-layout ConstraintLayout 控件支持
+
+    //轮播台
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //刷新，加载
+    implementation 'com.jwenfeng.pulltorefresh:library:1.2.7'
+
+    //图片开源库
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //导航栏
+    implementation 'com.githang:status-bar-compat:0.7'
+
+    //底部悬浮按钮
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    //图片选择
+    implementation 'com.yanzhenjie:album:2.0.2'
+
+    //Fresco框架
+    implementation 'com.facebook.fresco:fresco:1.2.0'
+
+    //动态权限
+    compile project(path: ':easypermissions')
+
+    //动态加载
+    compile 'com.wang.avi:library:2.1.3'
+
+    //超过64K
+    compile 'com.android.support:multidex:1.0.1'
+
+    //Dialog
+    compile 'com.labo.kaji:swipeawaydialog:0.1.1'
+
+    //    //闪光
+
+    //    implementation 'com.facebook.shimmer:shimmer:0.2.0'
+
+    //战队卡片
+    compile 'com.android.support:cardview-v7:27.1.1'
+
+    //侧滑删除
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.1'
+    //手机短信
+    implementation files('libs/aliyun-java-sdk-dysmsapi-1.0.0.jar')
+
+    //进度条
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+}
