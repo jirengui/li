@@ -35,8 +35,7 @@ public class MyApplication extends MultiDexApplication {
     public static UserIndividualInfoBean user = null;
     public static String city;
     public static String tianqi;
-    public static String ip = "47.95.123.168:8080";
-    //    47.95.123.168 阿里公网
+    public static String ip = "192.168.43.44:8080";
 //    192.168.43.44 手机热点
     public static String imageUri = "http://" + ip + "/image/touxiang/";
     public static String url = "http://" + ip + "/imooo/relogin";    //登录
